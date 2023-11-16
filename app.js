@@ -13,9 +13,10 @@ class FormSubmit{
         this.sendForm = this.sendForm.bind(this);
     }
 
-    displaySuccess(){
-        this.form.innerHTML = this.settings.success;
-    }
+    // displaySuccess(){
+    //     //this.form.innerHTML = this.settings.success;
+    //     this.form.location.reload();
+    // }
     displayError(){
 
         this.form.innerHTML = this.settings.error;
@@ -52,7 +53,7 @@ class FormSubmit{
                  },
                  body: JSON.stringify(this.getFormObject()),
              });
-             this.displaySuccess();
+            //  this.displaySuccess();
 
         }catch(error){
             this.displayError();
@@ -70,7 +71,7 @@ const formSubmit = new FormSubmit({
 
     form: "[data-form]",
     button: "[data-button]",
-    success: "<h1 class='success'>Mensagem Enviada</h1>",
+    // success: "successPage.html",
     error: "<h1 class='error'>Nao foi possivel enviar sua mensagem</h1>",
 });
 

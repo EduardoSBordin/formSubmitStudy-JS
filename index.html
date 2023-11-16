@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Test</title>
+
+    <style>
+        body{
+            background: rgb(7, 43, 107);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            display: flex;
+            color: white;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+    </style>
 </head>
 <body>
 
-    <form action="https://formsubmit.co/dudu.bordin16@hotmail.com" method="POST" data-form>
+    <form action="https://formsubmit.co/dudubordin26@hotmail.com" method="POST" data-form>
         <input type="text" name="name" placeholder="Type your name." required>
         <input type="email" name="email" placeholder="Type your email." required>
         <textarea name="message" cols="30" rows="10" placeholder="Type your question."></textarea>
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500">
+        <input type="hidden" name="_captcha" value="false">
         <button type="submit" data-button>Send</button>
    </form>
     
-<script src="./app.js"></script>
+<!-- <script src="./app.js"></script> -->
+<!-- <script src="app2.js"></script> -->
 </body>
 </html>
 <!-- https://formsubmit.co/dudu.bordin16@hotmail.com -->
